@@ -119,16 +119,27 @@ Use **Google Colab** or a local machine with a **GPU**.
 
 # Installation
 ### 1. Clone the Repository
-```
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+```bash
+git clone https://github.com/CM-Talha/Drone-Data-Analysis.git
+cd Drone-Data-Analysis
 ```
 
 ### 2. Create a Virtual Environment
-```
+```bash
 python3 -m venv venv
 source venv/bin/activate       # Linux/Mac
 venv\Scripts\activate          # Windows
+```
+
+### 3. Install Dependencies
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+Alternatively, install specific packages:
+```bash
+pip install tensorflow==2.19.0 tf-keras==2.19.0 scikit-learn pandas numpy
 ```
 
 # Usage Guide
